@@ -14673,13 +14673,13 @@ Required-by: datashader, holoviews, hvplot, seaborn, statsmodels, xarray
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[69]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[218]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">gitCloudRepo</span><span class="o">=</span><span class="s1">&#39;https://github.com/Van-US-COVID-Data/Deliverable-1/raw/main/&#39;</span>
 <span class="n">fileName</span><span class="o">=</span><span class="s2">&quot;us-counties-2020.txt&quot;</span>
 
-<span class="n">DFtxt</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">gitCloudRepo</span><span class="o">+</span><span class="s2">&quot;us-counties-2020.txt&quot;</span><span class="p">)</span>
+<span class="n">DFtxt2020</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">gitCloudRepo</span><span class="o">+</span><span class="s2">&quot;us-counties-2020.txt&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14692,10 +14692,10 @@ Required-by: datashader, holoviews, hvplot, seaborn, statsmodels, xarray
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[70]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[219]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2020</span>
 </pre></div>
 
      </div>
@@ -14713,7 +14713,7 @@ Required-by: datashader, holoviews, hvplot, seaborn, statsmodels, xarray
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[70]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[219]:</div>
 
 
 
@@ -14864,7 +14864,7 @@ Required-by: datashader, holoviews, hvplot, seaborn, statsmodels, xarray
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[71]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">DFtxt</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">DFtxt2020</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14905,7 +14905,7 @@ Required-by: datashader, holoviews, hvplot, seaborn, statsmodels, xarray
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">shape</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2020</span><span class="o">.</span><span class="n">shape</span>
 </pre></div>
 
      </div>
@@ -14946,7 +14946,7 @@ Required-by: datashader, holoviews, hvplot, seaborn, statsmodels, xarray
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2020</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15105,7 +15105,7 @@ Required-by: datashader, holoviews, hvplot, seaborn, statsmodels, xarray
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2020</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15264,7 +15264,7 @@ Required-by: datashader, holoviews, hvplot, seaborn, statsmodels, xarray
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">columns</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2020</span><span class="o">.</span><span class="n">columns</span>
 </pre></div>
 
      </div>
@@ -15305,7 +15305,7 @@ Required-by: datashader, holoviews, hvplot, seaborn, statsmodels, xarray
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[64]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2020</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -15346,7 +15346,7 @@ Required-by: datashader, holoviews, hvplot, seaborn, statsmodels, xarray
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">4</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2020</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">4</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -15395,11 +15395,10 @@ Name: cases, Length: 884737, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[36]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[220]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#why can&#39;t I access the data by column name using DFtxt.loc[:,&#39;sctyp&#39;]?</span>
-<span class="n">DFtxt</span><span class="o">.</span><span class="n">loc</span><span class="p">[:</span><span class="s1">&#39;sctyp&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2020</span><span class="o">.</span><span class="n">loc</span><span class="p">[:</span><span class="s1">&#39;deaths&#39;</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -15417,7 +15416,7 @@ Name: cases, Length: 884737, dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[36]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[220]:</div>
 
 
 
@@ -15451,48 +15450,48 @@ Name: cases, Length: 884737, dtype: int64</pre>
   <tbody>
     <tr>
       <th>0</th>
-      <td>2021-01-01</td>
-      <td>Autauga</td>
-      <td>Alabama</td>
-      <td>1001.0</td>
-      <td>4239</td>
-      <td>50.0</td>
+      <td>2020-01-21</td>
+      <td>Snohomish</td>
+      <td>Washington</td>
+      <td>53061.0</td>
+      <td>1</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>2021-01-01</td>
-      <td>Baldwin</td>
-      <td>Alabama</td>
-      <td>1003.0</td>
-      <td>13823</td>
-      <td>169.0</td>
+      <td>2020-01-22</td>
+      <td>Snohomish</td>
+      <td>Washington</td>
+      <td>53061.0</td>
+      <td>1</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>2021-01-01</td>
-      <td>Barbour</td>
-      <td>Alabama</td>
-      <td>1005.0</td>
-      <td>1517</td>
-      <td>33.0</td>
+      <td>2020-01-23</td>
+      <td>Snohomish</td>
+      <td>Washington</td>
+      <td>53061.0</td>
+      <td>1</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>2021-01-01</td>
-      <td>Bibb</td>
-      <td>Alabama</td>
-      <td>1007.0</td>
-      <td>1854</td>
-      <td>46.0</td>
+      <td>2020-01-24</td>
+      <td>Cook</td>
+      <td>Illinois</td>
+      <td>17031.0</td>
+      <td>1</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>2021-01-01</td>
-      <td>Blount</td>
-      <td>Alabama</td>
-      <td>1009.0</td>
-      <td>4693</td>
-      <td>63.0</td>
+      <td>2020-01-24</td>
+      <td>Snohomish</td>
+      <td>Washington</td>
+      <td>53061.0</td>
+      <td>1</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>...</th>
@@ -15504,53 +15503,53 @@ Name: cases, Length: 884737, dtype: int64</pre>
       <td>...</td>
     </tr>
     <tr>
-      <th>1185368</th>
-      <td>2021-12-31</td>
+      <th>884732</th>
+      <td>2020-12-31</td>
       <td>Sweetwater</td>
       <td>Wyoming</td>
       <td>56037.0</td>
-      <td>8320</td>
-      <td>107.0</td>
+      <td>2966</td>
+      <td>16.0</td>
     </tr>
     <tr>
-      <th>1185369</th>
-      <td>2021-12-31</td>
+      <th>884733</th>
+      <td>2020-12-31</td>
       <td>Teton</td>
       <td>Wyoming</td>
       <td>56039.0</td>
-      <td>5950</td>
-      <td>14.0</td>
+      <td>2138</td>
+      <td>4.0</td>
     </tr>
     <tr>
-      <th>1185370</th>
-      <td>2021-12-31</td>
+      <th>884734</th>
+      <td>2020-12-31</td>
       <td>Uinta</td>
       <td>Wyoming</td>
       <td>56041.0</td>
-      <td>4154</td>
-      <td>31.0</td>
+      <td>1558</td>
+      <td>7.0</td>
     </tr>
     <tr>
-      <th>1185371</th>
-      <td>2021-12-31</td>
+      <th>884735</th>
+      <td>2020-12-31</td>
       <td>Washakie</td>
       <td>Wyoming</td>
       <td>56043.0</td>
-      <td>1879</td>
-      <td>37.0</td>
+      <td>780</td>
+      <td>19.0</td>
     </tr>
     <tr>
-      <th>1185372</th>
-      <td>2021-12-31</td>
+      <th>884736</th>
+      <td>2020-12-31</td>
       <td>Weston</td>
       <td>Wyoming</td>
       <td>56045.0</td>
-      <td>1254</td>
-      <td>14.0</td>
+      <td>476</td>
+      <td>2.0</td>
     </tr>
   </tbody>
 </table>
-<p>1185373 rows × 6 columns</p>
+<p>884737 rows × 6 columns</p>
 </div>
 </div>
 
@@ -15565,11 +15564,10 @@ Name: cases, Length: 884737, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[39]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[222]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#why can&#39;t I access the data by subdata frame  using DFtxt[[&#39;sctyp&#39;]</span>
-<span class="n">DFtxt</span><span class="p">[[</span><span class="s1">&#39;sctyp&#39;</span><span class="p">]]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2020</span><span class="p">[[</span><span class="s1">&#39;deaths&#39;</span><span class="p">]]</span>
 </pre></div>
 
      </div>
@@ -15587,7 +15585,7 @@ Name: cases, Length: 884737, dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[39]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[222]:</div>
 
 
 
@@ -15610,117 +15608,57 @@ Name: cases, Length: 884737, dtype: int64</pre>
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>date</th>
-      <th>county</th>
-      <th>state</th>
-      <th>fips</th>
-      <th>cases</th>
       <th>deaths</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>2021-01-01</td>
-      <td>Autauga</td>
-      <td>Alabama</td>
-      <td>1001.0</td>
-      <td>4239</td>
-      <td>50.0</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>2021-01-01</td>
-      <td>Baldwin</td>
-      <td>Alabama</td>
-      <td>1003.0</td>
-      <td>13823</td>
-      <td>169.0</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>2021-01-01</td>
-      <td>Barbour</td>
-      <td>Alabama</td>
-      <td>1005.0</td>
-      <td>1517</td>
-      <td>33.0</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>2021-01-01</td>
-      <td>Bibb</td>
-      <td>Alabama</td>
-      <td>1007.0</td>
-      <td>1854</td>
-      <td>46.0</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>2021-01-01</td>
-      <td>Blount</td>
-      <td>Alabama</td>
-      <td>1009.0</td>
-      <td>4693</td>
-      <td>63.0</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>...</th>
       <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
     </tr>
     <tr>
-      <th>1185368</th>
-      <td>2021-12-31</td>
-      <td>Sweetwater</td>
-      <td>Wyoming</td>
-      <td>56037.0</td>
-      <td>8320</td>
-      <td>107.0</td>
+      <th>884732</th>
+      <td>16.0</td>
     </tr>
     <tr>
-      <th>1185369</th>
-      <td>2021-12-31</td>
-      <td>Teton</td>
-      <td>Wyoming</td>
-      <td>56039.0</td>
-      <td>5950</td>
-      <td>14.0</td>
+      <th>884733</th>
+      <td>4.0</td>
     </tr>
     <tr>
-      <th>1185370</th>
-      <td>2021-12-31</td>
-      <td>Uinta</td>
-      <td>Wyoming</td>
-      <td>56041.0</td>
-      <td>4154</td>
-      <td>31.0</td>
+      <th>884734</th>
+      <td>7.0</td>
     </tr>
     <tr>
-      <th>1185371</th>
-      <td>2021-12-31</td>
-      <td>Washakie</td>
-      <td>Wyoming</td>
-      <td>56043.0</td>
-      <td>1879</td>
-      <td>37.0</td>
+      <th>884735</th>
+      <td>19.0</td>
     </tr>
     <tr>
-      <th>1185372</th>
-      <td>2021-12-31</td>
-      <td>Weston</td>
-      <td>Wyoming</td>
-      <td>56045.0</td>
-      <td>1254</td>
-      <td>14.0</td>
+      <th>884736</th>
+      <td>2.0</td>
     </tr>
   </tbody>
 </table>
-<p>1185373 rows × 6 columns</p>
+<p>884737 rows × 1 columns</p>
 </div>
 </div>
 
@@ -15738,7 +15676,7 @@ Name: cases, Length: 884737, dtype: int64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2020</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -15805,7 +15743,7 @@ memory usage: 40.5+ MB
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[73]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">columns</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2020</span><span class="o">.</span><span class="n">columns</span>
 </pre></div>
 
      </div>
@@ -15846,9 +15784,10 @@ memory usage: 40.5+ MB
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[74]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">bye</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
-<span class="n">DFtxt</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">DFtxt</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">bye</span><span class="p">],</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">DFtxt</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Removing &quot;fips&quot; column</span>
+<span class="n">bye</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">DFtxt2020</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">DFtxt2020</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">bye</span><span class="p">],</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">DFtxt2020</span>
 </pre></div>
 
      </div>
@@ -16005,7 +15944,7 @@ memory usage: 40.5+ MB
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[75]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">pat</span><span class="o">=</span><span class="s2">&quot;\W&quot;</span><span class="p">,</span> <span class="n">repl</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2020</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">pat</span><span class="o">=</span><span class="s2">&quot;\W&quot;</span><span class="p">,</span> <span class="n">repl</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -16046,7 +15985,7 @@ memory usage: 40.5+ MB
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[78]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;\W&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2020</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;\W&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -16087,7 +16026,7 @@ memory usage: 40.5+ MB
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[79]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">columns</span><span class="o">=</span><span class="n">DFtxt</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;\W&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2020</span><span class="o">.</span><span class="n">columns</span><span class="o">=</span><span class="n">DFtxt2020</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;\W&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -16100,11 +16039,10 @@ memory usage: 40.5+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[80]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[217]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># for example</span>
-<span class="n">DFtxt</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,:</span><span class="mi">2</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2020</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,:</span><span class="mi">4</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -16122,7 +16060,7 @@ memory usage: 40.5+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[80]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[217]:</div>
 
 
 
@@ -16147,6 +16085,8 @@ memory usage: 40.5+ MB
       <th></th>
       <th>date</th>
       <th>county</th>
+      <th>state</th>
+      <th>deaths</th>
     </tr>
   </thead>
   <tbody>
@@ -16154,29 +16094,41 @@ memory usage: 40.5+ MB
       <th>0</th>
       <td>2020-01-21</td>
       <td>Snohomish</td>
+      <td>Washington</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>1</th>
       <td>2020-01-22</td>
       <td>Snohomish</td>
+      <td>Washington</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>2</th>
       <td>2020-01-23</td>
       <td>Snohomish</td>
+      <td>Washington</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>3</th>
       <td>2020-01-24</td>
       <td>Cook</td>
+      <td>Illinois</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>4</th>
       <td>2020-01-24</td>
       <td>Snohomish</td>
+      <td>Washington</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>...</th>
+      <td>...</td>
+      <td>...</td>
       <td>...</td>
       <td>...</td>
     </tr>
@@ -16184,30 +16136,40 @@ memory usage: 40.5+ MB
       <th>884732</th>
       <td>2020-12-31</td>
       <td>Sweetwater</td>
+      <td>Wyoming</td>
+      <td>16.0</td>
     </tr>
     <tr>
       <th>884733</th>
       <td>2020-12-31</td>
       <td>Teton</td>
+      <td>Wyoming</td>
+      <td>4.0</td>
     </tr>
     <tr>
       <th>884734</th>
       <td>2020-12-31</td>
       <td>Uinta</td>
+      <td>Wyoming</td>
+      <td>7.0</td>
     </tr>
     <tr>
       <th>884735</th>
       <td>2020-12-31</td>
       <td>Washakie</td>
+      <td>Wyoming</td>
+      <td>19.0</td>
     </tr>
     <tr>
       <th>884736</th>
       <td>2020-12-31</td>
       <td>Weston</td>
+      <td>Wyoming</td>
+      <td>2.0</td>
     </tr>
   </tbody>
 </table>
-<p>884737 rows × 2 columns</p>
+<p>884737 rows × 4 columns</p>
 </div>
 </div>
 
@@ -16241,7 +16203,7 @@ memory usage: 40.5+ MB
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[87]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,:</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">stripSeveral</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2020</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,:</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">stripSeveral</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -16362,7 +16324,7 @@ memory usage: 40.5+ MB
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[88]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,:</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="n">DFtxt</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,:</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">stripSeveral</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2020</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,:</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="n">DFtxt</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,:</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">stripSeveral</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -16378,7 +16340,7 @@ memory usage: 40.5+ MB
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[89]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2020</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -16430,8 +16392,7 @@ Name: county, Length: 884737, dtype: object</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[100]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#How do I create a frequency table for the entire chart instead of 5 different charts? </span>
-<span class="n">DFtxt</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2020</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -16483,7 +16444,7 @@ Name: date, Length: 346, dtype: int64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[101]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">state</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2020</span><span class="o">.</span><span class="n">state</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -16580,7 +16541,7 @@ Name: state, dtype: int64</pre>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Should I remove the &quot;unknown&quot; county variable or leave it there?</span>
-<span class="n">DFtxt</span><span class="o">.</span><span class="n">county</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<span class="n">DFtxt2020</span><span class="o">.</span><span class="n">county</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -16632,7 +16593,7 @@ Name: county, Length: 1930, dtype: int64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[103]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">deaths</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2020</span><span class="o">.</span><span class="n">deaths</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -16684,7 +16645,7 @@ Name: deaths, Length: 3455, dtype: int64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[104]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">cases</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2020</span><span class="o">.</span><span class="n">cases</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -16737,7 +16698,7 @@ Name: cases, Length: 29906, dtype: int64</pre>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#is there once again a way to save all of the frequency tables into one without doing each column separately one at a time?</span>
-<span class="n">tableCounts</span><span class="o">=</span><span class="n">DFtxt</span><span class="o">.</span><span class="n">state</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<span class="n">tableCounts</span><span class="o">=</span><span class="n">DFtxt2020</span><span class="o">.</span><span class="n">state</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 <span class="n">tableCounts</span>
 </pre></div>
 
@@ -16851,7 +16812,7 @@ Name: state, dtype: int64</pre>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Is it bad that there are both int64 and float64?</span>
-<span class="n">DFtxt</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+<span class="n">DFtxt2020</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -16901,7 +16862,7 @@ memory usage: 33.8+ MB
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[110]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2020</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -16955,13 +16916,13 @@ memory usage: 33.8+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[111]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[223]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">gitCloudRepo</span><span class="o">=</span><span class="s1">&#39;https://github.com/Van-US-COVID-Data/Deliverable-1/raw/main/&#39;</span>
 <span class="n">fileName</span><span class="o">=</span><span class="s2">&quot;us-counties-2021.txt&quot;</span>
 
-<span class="n">DFtxt</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">gitCloudRepo</span><span class="o">+</span><span class="s2">&quot;us-counties-2021.txt&quot;</span><span class="p">)</span>
+<span class="n">DFtxt2021</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">gitCloudRepo</span><span class="o">+</span><span class="s2">&quot;us-counties-2021.txt&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -16974,10 +16935,10 @@ memory usage: 33.8+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[112]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[224]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2021</span>
 </pre></div>
 
      </div>
@@ -16995,7 +16956,7 @@ memory usage: 33.8+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[112]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[224]:</div>
 
 
 
@@ -17143,10 +17104,10 @@ memory usage: 33.8+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[225]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">DFtxt</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">DFtxt2021</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -17164,7 +17125,7 @@ memory usage: 33.8+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[26]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[225]:</div>
 
 
 
@@ -17184,10 +17145,10 @@ memory usage: 33.8+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[226]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">shape</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2021</span><span class="o">.</span><span class="n">shape</span>
 </pre></div>
 
      </div>
@@ -17205,7 +17166,7 @@ memory usage: 33.8+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[27]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[226]:</div>
 
 
 
@@ -17225,10 +17186,10 @@ memory usage: 33.8+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[227]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2021</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -17246,7 +17207,7 @@ memory usage: 33.8+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[28]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[227]:</div>
 
 
 
@@ -17387,7 +17348,7 @@ memory usage: 33.8+ MB
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2021</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -17546,7 +17507,7 @@ memory usage: 33.8+ MB
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">columns</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2021</span><span class="o">.</span><span class="n">columns</span>
 </pre></div>
 
      </div>
@@ -17587,7 +17548,7 @@ memory usage: 33.8+ MB
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">4</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2021</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">4</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -17692,7 +17653,7 @@ memory usage: 33.8+ MB
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">loc</span><span class="p">[:</span><span class="s1">&#39;sctyp&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2021</span><span class="o">.</span><span class="n">loc</span><span class="p">[:</span><span class="s1">&#39;deaths&#39;</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -17858,11 +17819,11 @@ memory usage: 33.8+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[40]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[228]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#why can&#39;t I access the data by subdata frame  using DFtxt[[&#39;sctyp&#39;]</span>
-<span class="n">DFtxt</span><span class="p">[[</span><span class="s1">&#39;sctyp&#39;</span><span class="p">]]</span>
+<span class="n">DFtxt2021</span><span class="p">[[</span><span class="s1">&#39;deaths&#39;</span><span class="p">]]</span>
 </pre></div>
 
      </div>
@@ -17880,39 +17841,83 @@ memory usage: 33.8+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[228]:</div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">KeyError</span>                                  Traceback (most recent call last)
-<span class="ansi-green-fg">/var/folders/dh/1v4bnczd76g983szlxj7s61m0000gp/T/ipykernel_85496/1671428204.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>DFtxt<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#39;sctyp&#39;</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">]</span>
 
-<span class="ansi-green-fg">/opt/anaconda3/lib/python3.9/site-packages/pandas/core/frame.py</span> in <span class="ansi-cyan-fg">__getitem__</span><span class="ansi-blue-fg">(self, key)</span>
-<span class="ansi-green-intense-fg ansi-bold">   3509</span>             <span class="ansi-green-fg">if</span> is_iterator<span class="ansi-blue-fg">(</span>key<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">   3510</span>                 key <span class="ansi-blue-fg">=</span> list<span class="ansi-blue-fg">(</span>key<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">-&gt; 3511</span><span class="ansi-red-fg">             </span>indexer <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>columns<span class="ansi-blue-fg">.</span>_get_indexer_strict<span class="ansi-blue-fg">(</span>key<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#34;columns&#34;</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">]</span>
-<span class="ansi-green-intense-fg ansi-bold">   3512</span> 
-<span class="ansi-green-intense-fg ansi-bold">   3513</span>         <span class="ansi-red-fg"># take() does not accept boolean indexers</span>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-<span class="ansi-green-fg">/opt/anaconda3/lib/python3.9/site-packages/pandas/core/indexes/base.py</span> in <span class="ansi-cyan-fg">_get_indexer_strict</span><span class="ansi-blue-fg">(self, key, axis_name)</span>
-<span class="ansi-green-intense-fg ansi-bold">   5794</span>             keyarr<span class="ansi-blue-fg">,</span> indexer<span class="ansi-blue-fg">,</span> new_indexer <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>_reindex_non_unique<span class="ansi-blue-fg">(</span>keyarr<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   5795</span> 
-<span class="ansi-green-fg">-&gt; 5796</span><span class="ansi-red-fg">         </span>self<span class="ansi-blue-fg">.</span>_raise_if_missing<span class="ansi-blue-fg">(</span>keyarr<span class="ansi-blue-fg">,</span> indexer<span class="ansi-blue-fg">,</span> axis_name<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   5797</span> 
-<span class="ansi-green-intense-fg ansi-bold">   5798</span>         keyarr <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>take<span class="ansi-blue-fg">(</span>indexer<span class="ansi-blue-fg">)</span>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
 
-<span class="ansi-green-fg">/opt/anaconda3/lib/python3.9/site-packages/pandas/core/indexes/base.py</span> in <span class="ansi-cyan-fg">_raise_if_missing</span><span class="ansi-blue-fg">(self, key, indexer, axis_name)</span>
-<span class="ansi-green-intense-fg ansi-bold">   5854</span>                 <span class="ansi-green-fg">if</span> use_interval_msg<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">   5855</span>                     key <span class="ansi-blue-fg">=</span> list<span class="ansi-blue-fg">(</span>key<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">-&gt; 5856</span><span class="ansi-red-fg">                 </span><span class="ansi-green-fg">raise</span> KeyError<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">f&#34;None of [{key}] are in the [{axis_name}]&#34;</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   5857</span> 
-<span class="ansi-green-intense-fg ansi-bold">   5858</span>             not_found <span class="ansi-blue-fg">=</span> list<span class="ansi-blue-fg">(</span>ensure_index<span class="ansi-blue-fg">(</span>key<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">[</span>missing_mask<span class="ansi-blue-fg">.</span>nonzero<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">.</span>unique<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-red-fg">KeyError</span>: &#34;None of [Index([&#39;sctyp&#39;], dtype=&#39;object&#39;)] are in the [columns]&#34;</pre>
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>deaths</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>50.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>169.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>33.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>46.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>63.0</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>1185368</th>
+      <td>107.0</td>
+    </tr>
+    <tr>
+      <th>1185369</th>
+      <td>14.0</td>
+    </tr>
+    <tr>
+      <th>1185370</th>
+      <td>31.0</td>
+    </tr>
+    <tr>
+      <th>1185371</th>
+      <td>37.0</td>
+    </tr>
+    <tr>
+      <th>1185372</th>
+      <td>14.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>1185373 rows × 1 columns</p>
 </div>
+</div>
+
 </div>
 
 </div>
@@ -17924,10 +17929,10 @@ memory usage: 33.8+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[41]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[229]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2021</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -17991,10 +17996,10 @@ memory usage: 54.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[113]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[230]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">columns</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2021</span><span class="o">.</span><span class="n">columns</span>
 </pre></div>
 
      </div>
@@ -18012,7 +18017,7 @@ memory usage: 54.3+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[113]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[230]:</div>
 
 
 
@@ -18032,12 +18037,12 @@ memory usage: 54.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[114]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[231]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">bye</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
-<span class="n">DFtxt</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">DFtxt</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">bye</span><span class="p">],</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">DFtxt</span>
+<span class="n">DFtxt2021</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">DFtxt2021</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">bye</span><span class="p">],</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">DFtxt2021</span>
 </pre></div>
 
      </div>
@@ -18055,7 +18060,7 @@ memory usage: 54.3+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[114]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[231]:</div>
 
 
 
@@ -18191,10 +18196,10 @@ memory usage: 54.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[115]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[232]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">pat</span><span class="o">=</span><span class="s2">&quot;\W&quot;</span><span class="p">,</span> <span class="n">repl</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2021</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">pat</span><span class="o">=</span><span class="s2">&quot;\W&quot;</span><span class="p">,</span> <span class="n">repl</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -18212,7 +18217,7 @@ memory usage: 54.3+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[115]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[232]:</div>
 
 
 
@@ -18232,10 +18237,10 @@ memory usage: 54.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[116]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[233]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;\W&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2021</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;\W&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -18253,7 +18258,7 @@ memory usage: 54.3+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[116]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[233]:</div>
 
 
 
@@ -18273,10 +18278,10 @@ memory usage: 54.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[117]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[236]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">columns</span><span class="o">=</span><span class="n">DFtxt</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;\W&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2021</span><span class="o">.</span><span class="n">columns</span><span class="o">=</span><span class="n">DFtxt2021</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;\W&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -18289,11 +18294,10 @@ memory usage: 54.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[118]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[237]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># for example</span>
-<span class="n">DFtxt</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,:</span><span class="mi">2</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2021</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,:</span><span class="mi">2</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -18311,7 +18315,7 @@ memory usage: 54.3+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[118]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[237]:</div>
 
 
 
@@ -18411,7 +18415,7 @@ memory usage: 54.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[119]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[238]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">stripSeveral</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
@@ -18427,10 +18431,10 @@ memory usage: 54.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[120]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[239]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,:</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">stripSeveral</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2021</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,:</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">stripSeveral</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -18448,7 +18452,7 @@ memory usage: 54.3+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[120]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[239]:</div>
 
 
 
@@ -18551,7 +18555,7 @@ memory usage: 54.3+ MB
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[121]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,:</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="n">DFtxt</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,:</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">stripSeveral</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2021</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,:</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="n">DFtxt2021</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,:</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">stripSeveral</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -18564,10 +18568,10 @@ memory usage: 54.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[122]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[240]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2021</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -18585,7 +18589,7 @@ memory usage: 54.3+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[122]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[240]:</div>
 
 
 
@@ -18616,11 +18620,11 @@ Name: county, Length: 1185373, dtype: object</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[123]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[241]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#How do I create a frequency table for the entire chart instead of 5 different charts? </span>
-<span class="n">DFtxt</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<span class="n">DFtxt2021</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -18638,7 +18642,7 @@ Name: county, Length: 1185373, dtype: object</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[123]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[241]:</div>
 
 
 
@@ -18669,10 +18673,10 @@ Name: date, Length: 365, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[124]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[242]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">state</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2021</span><span class="o">.</span><span class="n">state</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -18690,7 +18694,7 @@ Name: date, Length: 365, dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[124]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[242]:</div>
 
 
 
@@ -18766,11 +18770,11 @@ Name: state, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[125]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[243]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Should I remove the &quot;unknown&quot; county variable or leave it there?</span>
-<span class="n">DFtxt</span><span class="o">.</span><span class="n">county</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<span class="n">DFtxt2021</span><span class="o">.</span><span class="n">county</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -18788,7 +18792,7 @@ Name: state, dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[125]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[243]:</div>
 
 
 
@@ -18819,10 +18823,10 @@ Name: county, Length: 1930, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[126]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[244]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">deaths</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2021</span><span class="o">.</span><span class="n">deaths</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -18840,7 +18844,7 @@ Name: county, Length: 1930, dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[126]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[244]:</div>
 
 
 
@@ -18871,10 +18875,10 @@ Name: deaths, Length: 6570, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[127]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[245]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">cases</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2021</span><span class="o">.</span><span class="n">cases</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -18892,7 +18896,7 @@ Name: deaths, Length: 6570, dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[127]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[245]:</div>
 
 
 
@@ -18923,11 +18927,11 @@ Name: cases, Length: 77780, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[128]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[246]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#is there once again a way to save all of the frequency tables into one without doing each column separately one at a time?</span>
-<span class="n">tableCounts</span><span class="o">=</span><span class="n">DFtxt</span><span class="o">.</span><span class="n">state</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<span class="n">tableCounts</span><span class="o">=</span><span class="n">DFtxt2021</span><span class="o">.</span><span class="n">state</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 <span class="n">tableCounts</span>
 </pre></div>
 
@@ -18946,7 +18950,7 @@ Name: cases, Length: 77780, dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[128]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[246]:</div>
 
 
 
@@ -19038,11 +19042,11 @@ Name: state, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[129]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[247]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Is it bad that there are both int64 and float64?</span>
-<span class="n">DFtxt</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+<span class="n">DFtxt2021</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -19089,10 +19093,10 @@ memory usage: 45.2+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[130]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[248]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2021</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -19110,7 +19114,7 @@ memory usage: 45.2+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[130]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[248]:</div>
 
 
 
@@ -19146,13 +19150,13 @@ memory usage: 45.2+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[131]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[249]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">gitCloudRepo</span><span class="o">=</span><span class="s1">&#39;https://github.com/Van-US-COVID-Data/Deliverable-1/raw/main/&#39;</span>
 <span class="n">fileName</span><span class="o">=</span><span class="s2">&quot;us-counties-2022.txt&quot;</span>
 
-<span class="n">DFtxt</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">gitCloudRepo</span><span class="o">+</span><span class="s2">&quot;us-counties-2022.txt&quot;</span><span class="p">)</span>
+<span class="n">DFtxt2022</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">gitCloudRepo</span><span class="o">+</span><span class="s2">&quot;us-counties-2022.txt&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -19165,10 +19169,10 @@ memory usage: 45.2+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[43]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[250]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2022</span>
 </pre></div>
 
      </div>
@@ -19186,7 +19190,7 @@ memory usage: 45.2+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[43]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[250]:</div>
 
 
 
@@ -19334,10 +19338,10 @@ memory usage: 45.2+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[44]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[251]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">DFtxt</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">DFtxt2022</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -19355,7 +19359,7 @@ memory usage: 45.2+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[44]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[251]:</div>
 
 
 
@@ -19375,10 +19379,10 @@ memory usage: 45.2+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[45]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[252]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">shape</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2022</span><span class="o">.</span><span class="n">shape</span>
 </pre></div>
 
      </div>
@@ -19396,7 +19400,7 @@ memory usage: 45.2+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[45]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[252]:</div>
 
 
 
@@ -19416,10 +19420,10 @@ memory usage: 45.2+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[46]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[253]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2022</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -19437,7 +19441,7 @@ memory usage: 45.2+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[46]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[253]:</div>
 
 
 
@@ -19578,7 +19582,7 @@ memory usage: 45.2+ MB
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[47]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2022</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -19734,10 +19738,10 @@ memory usage: 45.2+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[48]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[254]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">columns</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2022</span><span class="o">.</span><span class="n">columns</span>
 </pre></div>
 
      </div>
@@ -19755,7 +19759,7 @@ memory usage: 45.2+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[48]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[254]:</div>
 
 
 
@@ -19775,10 +19779,10 @@ memory usage: 45.2+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[49]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[255]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">4</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2022</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">4</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -19796,7 +19800,7 @@ memory usage: 45.2+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[49]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[255]:</div>
 
 
 
@@ -19880,10 +19884,10 @@ memory usage: 45.2+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[50]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[256]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">loc</span><span class="p">[:</span><span class="s1">&#39;sctyp&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2022</span><span class="o">.</span><span class="n">loc</span><span class="p">[:</span><span class="s1">&#39;deaths&#39;</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -19901,7 +19905,7 @@ memory usage: 45.2+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[50]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[256]:</div>
 
 
 
@@ -20049,10 +20053,10 @@ memory usage: 45.2+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[51]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[257]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2022</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -20119,7 +20123,7 @@ memory usage: 54.4+ MB
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[132]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">columns</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2022</span><span class="o">.</span><span class="n">columns</span>
 </pre></div>
 
      </div>
@@ -20157,12 +20161,12 @@ memory usage: 54.4+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[133]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[258]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">bye</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
-<span class="n">DFtxt</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">DFtxt</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">bye</span><span class="p">],</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">DFtxt</span>
+<span class="n">DFtxt2022</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">DFtxt2022</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">bye</span><span class="p">],</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">DFtxt2022</span>
 </pre></div>
 
      </div>
@@ -20180,7 +20184,7 @@ memory usage: 54.4+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[133]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[258]:</div>
 
 
 
@@ -20319,7 +20323,7 @@ memory usage: 54.4+ MB
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[134]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">pat</span><span class="o">=</span><span class="s2">&quot;\W&quot;</span><span class="p">,</span> <span class="n">repl</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2022</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">pat</span><span class="o">=</span><span class="s2">&quot;\W&quot;</span><span class="p">,</span> <span class="n">repl</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -20360,7 +20364,7 @@ memory usage: 54.4+ MB
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[135]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;\W&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2022</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;\W&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -20401,7 +20405,7 @@ memory usage: 54.4+ MB
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[136]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">columns</span><span class="o">=</span><span class="n">DFtxt</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;\W&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2022</span><span class="o">.</span><span class="n">columns</span><span class="o">=</span><span class="n">DFtxt2022</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;\W&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -20414,11 +20418,11 @@ memory usage: 54.4+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[137]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[259]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># for example</span>
-<span class="n">DFtxt</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,:</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">DFtxt2022</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,:</span><span class="mi">2</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -20436,7 +20440,7 @@ memory usage: 54.4+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[137]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[259]:</div>
 
 
 
@@ -20536,7 +20540,7 @@ memory usage: 54.4+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[138]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[260]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">stripSeveral</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
@@ -20552,10 +20556,10 @@ memory usage: 54.4+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[139]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[261]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,:</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">stripSeveral</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2022</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,:</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">stripSeveral</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -20573,7 +20577,7 @@ memory usage: 54.4+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[139]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[261]:</div>
 
 
 
@@ -20673,10 +20677,10 @@ memory usage: 54.4+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[140]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[262]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,:</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="n">DFtxt</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,:</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">stripSeveral</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2022</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,:</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="n">DFtxt2022</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,:</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">stripSeveral</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -20689,10 +20693,10 @@ memory usage: 54.4+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[141]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[263]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2022</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -20710,7 +20714,7 @@ memory usage: 54.4+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[141]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[263]:</div>
 
 
 
@@ -20741,11 +20745,11 @@ Name: county, Length: 1188042, dtype: object</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[142]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[264]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#How do I create a frequency table for the entire chart instead of 5 different charts? </span>
-<span class="n">DFtxt</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<span class="n">DFtxt2022</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -20763,7 +20767,7 @@ Name: county, Length: 1188042, dtype: object</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[142]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[264]:</div>
 
 
 
@@ -20794,10 +20798,10 @@ Name: date, Length: 365, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[143]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[265]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">state</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2022</span><span class="o">.</span><span class="n">state</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -20815,7 +20819,7 @@ Name: date, Length: 365, dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[143]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[265]:</div>
 
 
 
@@ -20891,11 +20895,11 @@ Name: state, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[144]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[266]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Should I remove the &quot;unknown&quot; county variable or leave it there?</span>
-<span class="n">DFtxt</span><span class="o">.</span><span class="n">county</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<span class="n">DFtxt2022</span><span class="o">.</span><span class="n">county</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -20913,7 +20917,7 @@ Name: state, dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[144]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[266]:</div>
 
 
 
@@ -20944,10 +20948,10 @@ Name: county, Length: 1932, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[145]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[267]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">deaths</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2022</span><span class="o">.</span><span class="n">deaths</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -20965,7 +20969,7 @@ Name: county, Length: 1932, dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[145]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[267]:</div>
 
 
 
@@ -20996,10 +21000,10 @@ Name: deaths, Length: 6733, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[146]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[268]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">cases</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2022</span><span class="o">.</span><span class="n">cases</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -21017,7 +21021,7 @@ Name: deaths, Length: 6733, dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[146]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[268]:</div>
 
 
 
@@ -21048,11 +21052,11 @@ Name: cases, Length: 93978, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[147]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[269]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#is there once again a way to save all of the frequency tables into one without doing each column separately one at a time?</span>
-<span class="n">tableCounts</span><span class="o">=</span><span class="n">DFtxt</span><span class="o">.</span><span class="n">state</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<span class="n">tableCounts</span><span class="o">=</span><span class="n">DFtxt2022</span><span class="o">.</span><span class="n">state</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 <span class="n">tableCounts</span>
 </pre></div>
 
@@ -21071,7 +21075,7 @@ Name: cases, Length: 93978, dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[147]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[269]:</div>
 
 
 
@@ -21163,11 +21167,11 @@ Name: state, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[149]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[270]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Is it bad that there are both int64 and float64?</span>
-<span class="n">DFtxt</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+<span class="n">DFtxt2022</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -21214,10 +21218,10 @@ memory usage: 45.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[150]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[271]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2022</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -21235,7 +21239,7 @@ memory usage: 45.3+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[150]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[271]:</div>
 
 
 
@@ -21271,13 +21275,13 @@ memory usage: 45.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[154]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[272]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">gitCloudRepo</span><span class="o">=</span><span class="s1">&#39;https://github.com/Van-US-COVID-Data/Deliverable-1/raw/main/&#39;</span>
 <span class="n">fileName</span><span class="o">=</span><span class="s2">&quot;us-counties-2023.txt&quot;</span>
 
-<span class="n">DFtxt</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">gitCloudRepo</span><span class="o">+</span><span class="s2">&quot;us-counties-2023.txt&quot;</span><span class="p">)</span>
+<span class="n">DFtxt2023</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">gitCloudRepo</span><span class="o">+</span><span class="s2">&quot;us-counties-2023.txt&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -21290,10 +21294,10 @@ memory usage: 45.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[155]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[273]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2023</span>
 </pre></div>
 
      </div>
@@ -21311,7 +21315,7 @@ memory usage: 45.3+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[155]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[273]:</div>
 
 
 
@@ -21459,10 +21463,10 @@ memory usage: 45.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[156]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[274]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">DFtxt</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">DFtxt2023</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -21480,7 +21484,7 @@ memory usage: 45.3+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[156]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[274]:</div>
 
 
 
@@ -21500,10 +21504,10 @@ memory usage: 45.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[157]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[275]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">shape</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2023</span><span class="o">.</span><span class="n">shape</span>
 </pre></div>
 
      </div>
@@ -21521,7 +21525,7 @@ memory usage: 45.3+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[157]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[275]:</div>
 
 
 
@@ -21541,10 +21545,10 @@ memory usage: 45.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[158]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[276]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2023</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -21562,7 +21566,7 @@ memory usage: 45.3+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[158]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[276]:</div>
 
 
 
@@ -21700,10 +21704,10 @@ memory usage: 45.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[159]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[277]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2023</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -21721,7 +21725,7 @@ memory usage: 45.3+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[159]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[277]:</div>
 
 
 
@@ -21859,10 +21863,10 @@ memory usage: 45.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[160]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[278]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">columns</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2023</span><span class="o">.</span><span class="n">columns</span>
 </pre></div>
 
      </div>
@@ -21880,7 +21884,7 @@ memory usage: 45.3+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[160]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[278]:</div>
 
 
 
@@ -21900,10 +21904,10 @@ memory usage: 45.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[161]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[279]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">4</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2023</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">4</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -21921,7 +21925,7 @@ memory usage: 45.3+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[161]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[279]:</div>
 
 
 
@@ -22005,10 +22009,10 @@ memory usage: 45.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[162]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[280]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">loc</span><span class="p">[:</span><span class="s1">&#39;sctyp&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2023</span><span class="o">.</span><span class="n">loc</span><span class="p">[:</span><span class="s1">&#39;sctyp&#39;</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -22026,7 +22030,7 @@ memory usage: 45.3+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[162]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[280]:</div>
 
 
 
@@ -22174,10 +22178,10 @@ memory usage: 45.3+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[163]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[281]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2023</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -22257,10 +22261,10 @@ memory usage: 3.6+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[165]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[282]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">columns</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2023</span><span class="o">.</span><span class="n">columns</span>
 </pre></div>
 
      </div>
@@ -22278,7 +22282,7 @@ memory usage: 3.6+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[165]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[282]:</div>
 
 
 
@@ -22298,12 +22302,12 @@ memory usage: 3.6+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[166]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[283]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">bye</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
-<span class="n">DFtxt</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">DFtxt</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">bye</span><span class="p">],</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">DFtxt</span>
+<span class="n">DFtxt2023</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">DFtxt2023</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">bye</span><span class="p">],</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">DFtxt2023</span>
 </pre></div>
 
      </div>
@@ -22321,7 +22325,7 @@ memory usage: 3.6+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[166]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[283]:</div>
 
 
 
@@ -22457,10 +22461,10 @@ memory usage: 3.6+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[167]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[284]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">pat</span><span class="o">=</span><span class="s2">&quot;\W&quot;</span><span class="p">,</span> <span class="n">repl</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2023</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">pat</span><span class="o">=</span><span class="s2">&quot;\W&quot;</span><span class="p">,</span> <span class="n">repl</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -22478,7 +22482,7 @@ memory usage: 3.6+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[167]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[284]:</div>
 
 
 
@@ -22498,10 +22502,10 @@ memory usage: 3.6+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[168]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[285]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;\W&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2023</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;\W&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -22519,7 +22523,7 @@ memory usage: 3.6+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[168]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[285]:</div>
 
 
 
@@ -22539,10 +22543,10 @@ memory usage: 3.6+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[169]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[287]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">columns</span><span class="o">=</span><span class="n">DFtxt</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;\W&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2023</span><span class="o">.</span><span class="n">columns</span><span class="o">=</span><span class="n">DFtxt2023</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;\W&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -22555,11 +22559,11 @@ memory usage: 3.6+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[170]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[289]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># for example</span>
-<span class="n">DFtxt</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,:</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">DFtxt2023</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,:</span><span class="mi">2</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -22577,7 +22581,7 @@ memory usage: 3.6+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[170]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[289]:</div>
 
 
 
@@ -22677,7 +22681,7 @@ memory usage: 3.6+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[171]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[290]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">stripSeveral</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
@@ -22693,10 +22697,10 @@ memory usage: 3.6+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[172]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[291]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,:</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">stripSeveral</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2023</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,:</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">stripSeveral</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -22714,7 +22718,7 @@ memory usage: 3.6+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[172]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[291]:</div>
 
 
 
@@ -22814,10 +22818,10 @@ memory usage: 3.6+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[173]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[292]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,:</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="n">DFtxt</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,:</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">stripSeveral</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2023</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,:</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="n">DFtxt2023</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,:</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">stripSeveral</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -22830,10 +22834,10 @@ memory usage: 3.6+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[174]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[293]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2023</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -22851,7 +22855,7 @@ memory usage: 3.6+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[174]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[293]:</div>
 
 
 
@@ -22882,11 +22886,11 @@ Name: county, Length: 78103, dtype: object</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[175]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[294]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#How do I create a frequency table for the entire chart instead of 5 different charts? </span>
-<span class="n">DFtxt</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<span class="n">DFtxt2023</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -22904,7 +22908,7 @@ Name: county, Length: 78103, dtype: object</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[175]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[294]:</div>
 
 
 
@@ -22948,10 +22952,10 @@ Name: date, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[176]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[295]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">state</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2023</span><span class="o">.</span><span class="n">state</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -22969,7 +22973,7 @@ Name: date, dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[176]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[295]:</div>
 
 
 
@@ -23045,11 +23049,11 @@ Name: state, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[177]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[296]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Should I remove the &quot;unknown&quot; county variable or leave it there?</span>
-<span class="n">DFtxt</span><span class="o">.</span><span class="n">county</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<span class="n">DFtxt2023</span><span class="o">.</span><span class="n">county</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -23067,7 +23071,7 @@ Name: state, dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[177]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[296]:</div>
 
 
 
@@ -23098,10 +23102,10 @@ Name: county, Length: 1932, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[178]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[297]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">deaths</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2023</span><span class="o">.</span><span class="n">deaths</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -23119,7 +23123,7 @@ Name: county, Length: 1932, dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[178]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[297]:</div>
 
 
 
@@ -23150,10 +23154,10 @@ Name: deaths, Length: 1811, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[179]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[298]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">cases</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2023</span><span class="o">.</span><span class="n">cases</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -23171,7 +23175,7 @@ Name: deaths, Length: 1811, dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[179]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[298]:</div>
 
 
 
@@ -23202,11 +23206,11 @@ Name: cases, Length: 15084, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[180]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[299]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#is there once again a way to save all of the frequency tables into one without doing each column separately one at a time?</span>
-<span class="n">tableCounts</span><span class="o">=</span><span class="n">DFtxt</span><span class="o">.</span><span class="n">state</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<span class="n">tableCounts</span><span class="o">=</span><span class="n">DFtxt2023</span><span class="o">.</span><span class="n">state</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 <span class="n">tableCounts</span>
 </pre></div>
 
@@ -23225,7 +23229,7 @@ Name: cases, Length: 15084, dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[180]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[299]:</div>
 
 
 
@@ -23317,11 +23321,11 @@ Name: state, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[182]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[300]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Is it bad that there are both int64 and float64?</span>
-<span class="n">DFtxt</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+<span class="n">DFtxt2023</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -23368,10 +23372,10 @@ memory usage: 3.0+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[183]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[301]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt2023</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -23389,7 +23393,7 @@ memory usage: 3.0+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[183]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[301]:</div>
 
 
 
@@ -23420,43 +23424,15 @@ memory usage: 3.0+ MB
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[195]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#How do I do this without removing all of the cleaning and formatting I&#39;ve done to the data? If you look below, &quot;fips&quot; is back even though. I deleted that column</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-
-<span class="n">file2023</span><span class="o">=</span><span class="s2">&quot;us-counties-2023.txt&quot;</span>
-<span class="n">file2022</span><span class="o">=</span><span class="s2">&quot;us-counties-2022.txt&quot;</span>
-<span class="n">file2021</span><span class="o">=</span><span class="s2">&quot;us-counties-2021.txt&quot;</span>
-<span class="n">file2020</span><span class="o">=</span><span class="s2">&quot;us-counties-2020.txt&quot;</span>
-    
-
-<span class="n">fragil2023</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">gitCloudRepo</span><span class="o">+</span><span class="s2">&quot;us-counties-2023.txt&quot;</span><span class="p">)</span>
-<span class="n">fragil2022</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">gitCloudRepo</span><span class="o">+</span><span class="s2">&quot;us-counties-2022.txt&quot;</span><span class="p">)</span>
-<span class="n">fragil2021</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">gitCloudRepo</span><span class="o">+</span><span class="s2">&quot;us-counties-2021.txt&quot;</span><span class="p">)</span>
-<span class="n">fragil2020</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">gitCloudRepo</span><span class="o">+</span><span class="s2">&quot;us-counties-2020.txt&quot;</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[191]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[303]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">set</span><span class="p">(</span><span class="n">fragil2023</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span><span class="o">&amp;</span><span class="nb">set</span><span class="p">(</span><span class="n">fragil2023</span><span class="p">)</span><span class="o">&amp;</span><span class="nb">set</span><span class="p">(</span><span class="n">fragil2021</span><span class="p">)</span><span class="o">&amp;</span><span class="nb">set</span><span class="p">(</span><span class="n">fragil2020</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">set</span><span class="p">(</span><span class="n">DFtxt2023</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span><span class="o">&amp;</span><span class="nb">set</span><span class="p">(</span><span class="n">DFtxt2022</span><span class="p">)</span><span class="o">&amp;</span><span class="nb">set</span><span class="p">(</span><span class="n">DFtxt2021</span><span class="p">)</span><span class="o">&amp;</span><span class="nb">set</span><span class="p">(</span><span class="n">DFtxt2020</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -23474,13 +23450,13 @@ memory usage: 3.0+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[191]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[303]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>{&#39;cases&#39;, &#39;county&#39;, &#39;date&#39;, &#39;deaths&#39;, &#39;fips&#39;, &#39;state&#39;}</pre>
+<pre>{&#39;cases&#39;, &#39;county&#39;, &#39;date&#39;, &#39;deaths&#39;, &#39;state&#39;}</pre>
 </div>
 
 </div>
@@ -23494,164 +23470,16 @@ memory usage: 3.0+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[196]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[304]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Why won&#39;t this permanently remove &quot;fips?&quot;</span>
-<span class="n">bye</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
-<span class="n">DFtxt</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">DFtxt</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">bye</span><span class="p">],</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">DFtxt</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[196]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>date</th>
-      <th>county</th>
-      <th>state</th>
-      <th>deaths</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>2020-01-21</td>
-      <td>Snohomish</td>
-      <td>Washington</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>2020-01-22</td>
-      <td>Snohomish</td>
-      <td>Washington</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>2020-01-23</td>
-      <td>Snohomish</td>
-      <td>Washington</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>2020-01-24</td>
-      <td>Cook</td>
-      <td>Illinois</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>2020-01-24</td>
-      <td>Snohomish</td>
-      <td>Washington</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>884732</th>
-      <td>2020-12-31</td>
-      <td>Sweetwater</td>
-      <td>Wyoming</td>
-      <td>16.0</td>
-    </tr>
-    <tr>
-      <th>884733</th>
-      <td>2020-12-31</td>
-      <td>Teton</td>
-      <td>Wyoming</td>
-      <td>4.0</td>
-    </tr>
-    <tr>
-      <th>884734</th>
-      <td>2020-12-31</td>
-      <td>Uinta</td>
-      <td>Wyoming</td>
-      <td>7.0</td>
-    </tr>
-    <tr>
-      <th>884735</th>
-      <td>2020-12-31</td>
-      <td>Washakie</td>
-      <td>Wyoming</td>
-      <td>19.0</td>
-    </tr>
-    <tr>
-      <th>884736</th>
-      <td>2020-12-31</td>
-      <td>Weston</td>
-      <td>Wyoming</td>
-      <td>2.0</td>
-    </tr>
-  </tbody>
-</table>
-<p>884737 rows × 4 columns</p>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[197]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">common</span><span class="o">=</span><span class="nb">set</span><span class="p">(</span><span class="n">fragil2023</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span><span class="o">&amp;</span><span class="nb">set</span><span class="p">(</span><span class="n">fragil2022</span><span class="p">)</span><span class="o">&amp;</span><span class="nb">set</span><span class="p">(</span><span class="n">fragil2021</span><span class="p">)</span><span class="o">&amp;</span><span class="nb">set</span><span class="p">(</span><span class="n">fragil2020</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">common</span><span class="o">=</span><span class="nb">set</span><span class="p">(</span><span class="n">DFtxt2023</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span><span class="o">&amp;</span><span class="nb">set</span><span class="p">(</span><span class="n">DFtxt2022</span><span class="p">)</span><span class="o">&amp;</span><span class="nb">set</span><span class="p">(</span><span class="n">DFtxt2021</span><span class="p">)</span><span class="o">&amp;</span><span class="nb">set</span><span class="p">(</span><span class="n">DFtxt2020</span><span class="p">)</span>
 
 <span class="c1"># we are keeping just the &#39;common&#39; columns:</span>
-<span class="n">fragil2023ap</span><span class="o">=</span><span class="n">fragil2023</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="n">common</span><span class="p">]</span>
-<span class="n">fragil2022ap</span><span class="o">=</span><span class="n">fragil2022</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="n">common</span><span class="p">]</span>
-<span class="n">fragil2021ap</span><span class="o">=</span><span class="n">fragil2021</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="n">common</span><span class="p">]</span>
-<span class="n">fragil2020ap</span><span class="o">=</span><span class="n">fragil2020</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="n">common</span><span class="p">]</span>
+<span class="n">DFtxt2023ap</span><span class="o">=</span><span class="n">DFtxt2023</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="n">common</span><span class="p">]</span>
+<span class="n">DFtxt2022ap</span><span class="o">=</span><span class="n">DFtxt2022</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="n">common</span><span class="p">]</span>
+<span class="n">DFtxt2021ap</span><span class="o">=</span><span class="n">DFtxt2021</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="n">common</span><span class="p">]</span>
+<span class="n">DFtxt2020ap</span><span class="o">=</span><span class="n">DFtxt2020</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="n">common</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -23673,14 +23501,14 @@ memory usage: 3.0+ MB
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>/var/folders/dh/1v4bnczd76g983szlxj7s61m0000gp/T/ipykernel_85496/1138132634.py:4: FutureWarning: Passing a set as an indexer is deprecated and will raise in a future version. Use a list instead.
-  fragil2023ap=fragil2023.loc[:,common]
-/var/folders/dh/1v4bnczd76g983szlxj7s61m0000gp/T/ipykernel_85496/1138132634.py:5: FutureWarning: Passing a set as an indexer is deprecated and will raise in a future version. Use a list instead.
-  fragil2022ap=fragil2022.loc[:,common]
-/var/folders/dh/1v4bnczd76g983szlxj7s61m0000gp/T/ipykernel_85496/1138132634.py:6: FutureWarning: Passing a set as an indexer is deprecated and will raise in a future version. Use a list instead.
-  fragil2021ap=fragil2021.loc[:,common]
-/var/folders/dh/1v4bnczd76g983szlxj7s61m0000gp/T/ipykernel_85496/1138132634.py:7: FutureWarning: Passing a set as an indexer is deprecated and will raise in a future version. Use a list instead.
-  fragil2020ap=fragil2020.loc[:,common]
+<pre>/var/folders/dh/1v4bnczd76g983szlxj7s61m0000gp/T/ipykernel_85496/250273694.py:4: FutureWarning: Passing a set as an indexer is deprecated and will raise in a future version. Use a list instead.
+  DFtxt2023ap=DFtxt2023.loc[:,common]
+/var/folders/dh/1v4bnczd76g983szlxj7s61m0000gp/T/ipykernel_85496/250273694.py:5: FutureWarning: Passing a set as an indexer is deprecated and will raise in a future version. Use a list instead.
+  DFtxt2022ap=DFtxt2022.loc[:,common]
+/var/folders/dh/1v4bnczd76g983szlxj7s61m0000gp/T/ipykernel_85496/250273694.py:6: FutureWarning: Passing a set as an indexer is deprecated and will raise in a future version. Use a list instead.
+  DFtxt2021ap=DFtxt2021.loc[:,common]
+/var/folders/dh/1v4bnczd76g983szlxj7s61m0000gp/T/ipykernel_85496/250273694.py:7: FutureWarning: Passing a set as an indexer is deprecated and will raise in a future version. Use a list instead.
+  DFtxt2020ap=DFtxt2020.loc[:,common]
 </pre>
 </div>
 </div>
@@ -23694,13 +23522,13 @@ memory usage: 3.0+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[198]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[305]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">theZips</span><span class="o">=</span><span class="nb">zip</span><span class="p">(</span><span class="n">fragil2023ap</span><span class="o">.</span><span class="n">dtypes</span><span class="p">,</span>
-            <span class="n">fragil2022ap</span><span class="o">.</span><span class="n">dtypes</span><span class="p">,</span>
-            <span class="n">fragil2021ap</span><span class="o">.</span><span class="n">dtypes</span><span class="p">,</span>
-            <span class="n">fragil2020ap</span><span class="o">.</span><span class="n">dtypes</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">theZips</span><span class="o">=</span><span class="nb">zip</span><span class="p">(</span><span class="n">DFtxt2023ap</span><span class="o">.</span><span class="n">dtypes</span><span class="p">,</span>
+            <span class="n">DFtxt2022ap</span><span class="o">.</span><span class="n">dtypes</span><span class="p">,</span>
+            <span class="n">DFtxt2021ap</span><span class="o">.</span><span class="n">dtypes</span><span class="p">,</span>
+            <span class="n">DFtxt2020ap</span><span class="o">.</span><span class="n">dtypes</span><span class="p">)</span>
 <span class="c1"># you see:</span>
 <span class="nb">list</span><span class="p">(</span><span class="n">theZips</span><span class="p">)</span>
 </pre></div>
@@ -23720,7 +23548,7 @@ memory usage: 3.0+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[198]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[305]:</div>
 
 
 
@@ -23728,7 +23556,6 @@ memory usage: 3.0+ MB
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 <pre>[(dtype(&#39;O&#39;), dtype(&#39;O&#39;), dtype(&#39;O&#39;), dtype(&#39;O&#39;)),
  (dtype(&#39;O&#39;), dtype(&#39;O&#39;), dtype(&#39;O&#39;), dtype(&#39;O&#39;)),
- (dtype(&#39;float64&#39;), dtype(&#39;float64&#39;), dtype(&#39;float64&#39;), dtype(&#39;float64&#39;)),
  (dtype(&#39;O&#39;), dtype(&#39;O&#39;), dtype(&#39;O&#39;), dtype(&#39;O&#39;)),
  (dtype(&#39;int64&#39;), dtype(&#39;int64&#39;), dtype(&#39;int64&#39;), dtype(&#39;int64&#39;)),
  (dtype(&#39;float64&#39;), dtype(&#39;float64&#39;), dtype(&#39;float64&#39;), dtype(&#39;float64&#39;))]</pre>
@@ -23745,13 +23572,13 @@ memory usage: 3.0+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[199]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[306]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">theZips</span><span class="o">=</span><span class="nb">zip</span><span class="p">(</span><span class="n">fragil2023ap</span><span class="o">.</span><span class="n">dtypes</span><span class="p">,</span>
-            <span class="n">fragil2022ap</span><span class="o">.</span><span class="n">dtypes</span><span class="p">,</span>
-            <span class="n">fragil2021ap</span><span class="o">.</span><span class="n">dtypes</span><span class="p">,</span>
-            <span class="n">fragil2020ap</span><span class="o">.</span><span class="n">dtypes</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">theZips</span><span class="o">=</span><span class="nb">zip</span><span class="p">(</span><span class="n">DFtxt2023ap</span><span class="o">.</span><span class="n">dtypes</span><span class="p">,</span>
+            <span class="n">DFtxt2022ap</span><span class="o">.</span><span class="n">dtypes</span><span class="p">,</span>
+            <span class="n">DFtxt2021ap</span><span class="o">.</span><span class="n">dtypes</span><span class="p">,</span>
+            <span class="n">DFtxt2020ap</span><span class="o">.</span><span class="n">dtypes</span><span class="p">)</span>
 
 <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">theZips</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">x</span><span class="p">))</span><span class="o">&gt;</span><span class="mi">1</span><span class="p">]</span>
 </pre></div>
@@ -23771,7 +23598,7 @@ memory usage: 3.0+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[199]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[306]:</div>
 
 
 
@@ -23791,13 +23618,13 @@ memory usage: 3.0+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[200]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[307]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">theZips</span><span class="o">=</span><span class="nb">zip</span><span class="p">(</span><span class="n">fragil2023ap</span><span class="o">.</span><span class="n">dtypes</span><span class="p">,</span>
-            <span class="n">fragil2022ap</span><span class="o">.</span><span class="n">dtypes</span><span class="p">,</span>
-            <span class="n">fragil2021ap</span><span class="o">.</span><span class="n">dtypes</span><span class="p">,</span>
-            <span class="n">fragil2020ap</span><span class="o">.</span><span class="n">dtypes</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">theZips</span><span class="o">=</span><span class="nb">zip</span><span class="p">(</span><span class="n">DFtxt2023ap</span><span class="o">.</span><span class="n">dtypes</span><span class="p">,</span>
+            <span class="n">DFtxt2022ap</span><span class="o">.</span><span class="n">dtypes</span><span class="p">,</span>
+            <span class="n">DFtxt2021ap</span><span class="o">.</span><span class="n">dtypes</span><span class="p">,</span>
+            <span class="n">DFtxt2020ap</span><span class="o">.</span><span class="n">dtypes</span><span class="p">)</span>
 <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">theZips</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">x</span><span class="p">))</span><span class="o">&gt;</span><span class="mi">2</span><span class="p">]</span>
 </pre></div>
 
@@ -23816,7 +23643,7 @@ memory usage: 3.0+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[200]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[307]:</div>
 
 
 
@@ -23836,11 +23663,11 @@ memory usage: 3.0+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[201]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[308]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fragile</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">fragil2023ap</span><span class="p">,</span><span class="n">fragil2022ap</span><span class="p">,</span><span class="n">fragil2021ap</span><span class="p">,</span><span class="n">fragil2020ap</span><span class="p">])</span>
-<span class="n">fragile</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">DFtxt2023ap</span><span class="p">,</span><span class="n">DFtxt2022ap</span><span class="p">,</span><span class="n">DFtxt2021ap</span><span class="p">,</span><span class="n">DFtxt2020ap</span><span class="p">])</span>
+<span class="n">DFtxt</span>
 </pre></div>
 
      </div>
@@ -23858,7 +23685,7 @@ memory usage: 3.0+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[201]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[308]:</div>
 
 
 
@@ -23883,7 +23710,6 @@ memory usage: 3.0+ MB
       <th></th>
       <th>date</th>
       <th>state</th>
-      <th>fips</th>
       <th>county</th>
       <th>cases</th>
       <th>deaths</th>
@@ -23894,7 +23720,6 @@ memory usage: 3.0+ MB
       <th>0</th>
       <td>2023-01-01</td>
       <td>Alabama</td>
-      <td>1001.0</td>
       <td>Autauga</td>
       <td>18961</td>
       <td>230.0</td>
@@ -23903,7 +23728,6 @@ memory usage: 3.0+ MB
       <th>1</th>
       <td>2023-01-01</td>
       <td>Alabama</td>
-      <td>1003.0</td>
       <td>Baldwin</td>
       <td>67496</td>
       <td>719.0</td>
@@ -23912,7 +23736,6 @@ memory usage: 3.0+ MB
       <th>2</th>
       <td>2023-01-01</td>
       <td>Alabama</td>
-      <td>1005.0</td>
       <td>Barbour</td>
       <td>7027</td>
       <td>111.0</td>
@@ -23921,7 +23744,6 @@ memory usage: 3.0+ MB
       <th>3</th>
       <td>2023-01-01</td>
       <td>Alabama</td>
-      <td>1007.0</td>
       <td>Bibb</td>
       <td>7692</td>
       <td>108.0</td>
@@ -23930,7 +23752,6 @@ memory usage: 3.0+ MB
       <th>4</th>
       <td>2023-01-01</td>
       <td>Alabama</td>
-      <td>1009.0</td>
       <td>Blount</td>
       <td>17731</td>
       <td>260.0</td>
@@ -23942,13 +23763,11 @@ memory usage: 3.0+ MB
       <td>...</td>
       <td>...</td>
       <td>...</td>
-      <td>...</td>
     </tr>
     <tr>
       <th>884732</th>
       <td>2020-12-31</td>
       <td>Wyoming</td>
-      <td>56037.0</td>
       <td>Sweetwater</td>
       <td>2966</td>
       <td>16.0</td>
@@ -23957,7 +23776,6 @@ memory usage: 3.0+ MB
       <th>884733</th>
       <td>2020-12-31</td>
       <td>Wyoming</td>
-      <td>56039.0</td>
       <td>Teton</td>
       <td>2138</td>
       <td>4.0</td>
@@ -23966,7 +23784,6 @@ memory usage: 3.0+ MB
       <th>884734</th>
       <td>2020-12-31</td>
       <td>Wyoming</td>
-      <td>56041.0</td>
       <td>Uinta</td>
       <td>1558</td>
       <td>7.0</td>
@@ -23975,7 +23792,6 @@ memory usage: 3.0+ MB
       <th>884735</th>
       <td>2020-12-31</td>
       <td>Wyoming</td>
-      <td>56043.0</td>
       <td>Washakie</td>
       <td>780</td>
       <td>19.0</td>
@@ -23984,14 +23800,13 @@ memory usage: 3.0+ MB
       <th>884736</th>
       <td>2020-12-31</td>
       <td>Wyoming</td>
-      <td>56045.0</td>
       <td>Weston</td>
       <td>476</td>
       <td>2.0</td>
     </tr>
   </tbody>
 </table>
-<p>3336255 rows × 6 columns</p>
+<p>3336255 rows × 5 columns</p>
 </div>
 </div>
 
@@ -24006,11 +23821,11 @@ memory usage: 3.0+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[203]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[309]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fragile</span><span class="o">.</span><span class="n">set_index</span><span class="p">([</span><span class="s1">&#39;date&#39;</span><span class="p">,</span><span class="s1">&#39;state&#39;</span><span class="p">,</span><span class="s1">&#39;county&#39;</span><span class="p">,</span><span class="s1">&#39;cases&#39;</span><span class="p">,</span><span class="s1">&#39;deaths&#39;</span><span class="p">],</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">fragile</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">set_index</span><span class="p">([</span><span class="s1">&#39;date&#39;</span><span class="p">,</span><span class="s1">&#39;state&#39;</span><span class="p">,</span><span class="s1">&#39;county&#39;</span><span class="p">,</span><span class="s1">&#39;cases&#39;</span><span class="p">,</span><span class="s1">&#39;deaths&#39;</span><span class="p">],</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">DFtxt</span>
 </pre></div>
 
      </div>
@@ -24028,157 +23843,7 @@ memory usage: 3.0+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[203]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th>fips</th>
-    </tr>
-    <tr>
-      <th>date</th>
-      <th>state</th>
-      <th>county</th>
-      <th>cases</th>
-      <th>deaths</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th rowspan="5" valign="top">2023-01-01</th>
-      <th rowspan="5" valign="top">Alabama</th>
-      <th>Autauga</th>
-      <th>18961</th>
-      <th>230.0</th>
-      <td>1001.0</td>
-    </tr>
-    <tr>
-      <th>Baldwin</th>
-      <th>67496</th>
-      <th>719.0</th>
-      <td>1003.0</td>
-    </tr>
-    <tr>
-      <th>Barbour</th>
-      <th>7027</th>
-      <th>111.0</th>
-      <td>1005.0</td>
-    </tr>
-    <tr>
-      <th>Bibb</th>
-      <th>7692</th>
-      <th>108.0</th>
-      <td>1007.0</td>
-    </tr>
-    <tr>
-      <th>Blount</th>
-      <th>17731</th>
-      <th>260.0</th>
-      <td>1009.0</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <th>...</th>
-      <th>...</th>
-      <th>...</th>
-      <th>...</th>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th rowspan="5" valign="top">2020-12-31</th>
-      <th rowspan="5" valign="top">Wyoming</th>
-      <th>Sweetwater</th>
-      <th>2966</th>
-      <th>16.0</th>
-      <td>56037.0</td>
-    </tr>
-    <tr>
-      <th>Teton</th>
-      <th>2138</th>
-      <th>4.0</th>
-      <td>56039.0</td>
-    </tr>
-    <tr>
-      <th>Uinta</th>
-      <th>1558</th>
-      <th>7.0</th>
-      <td>56041.0</td>
-    </tr>
-    <tr>
-      <th>Washakie</th>
-      <th>780</th>
-      <th>19.0</th>
-      <td>56043.0</td>
-    </tr>
-    <tr>
-      <th>Weston</th>
-      <th>476</th>
-      <th>2.0</th>
-      <td>56045.0</td>
-    </tr>
-  </tbody>
-</table>
-<p>3336255 rows × 1 columns</p>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[204]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fragile</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="s1">&#39;fips&#39;</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">fragile</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[204]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[309]:</div>
 
 
 
@@ -24293,7 +23958,7 @@ memory usage: 3.0+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[205]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[310]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span>
@@ -24314,13 +23979,13 @@ memory usage: 3.0+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[205]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[310]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>Index([&#39;Date&#39;, &#39;County&#39;, &#39;State&#39;, &#39;Deaths&#39;], dtype=&#39;object&#39;)</pre>
+<pre>Index([], dtype=&#39;object&#39;)</pre>
 </div>
 
 </div>
@@ -24334,10 +23999,10 @@ memory usage: 3.0+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[206]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[311]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fragile</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -24363,6 +24028,142 @@ memory usage: 3.0+ MB
 MultiIndex: 3336255 entries, (&#39;2023-01-01&#39;, &#39;Alabama&#39;, &#39;Autauga&#39;, 18961, 230.0) to (&#39;2020-12-31&#39;, &#39;Wyoming&#39;, &#39;Weston&#39;, 476, 2.0)
 Empty DataFrame</pre>
 </div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[312]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DFtxt</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[312]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th>state</th>
+      <th>county</th>
+      <th>cases</th>
+      <th>deaths</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th rowspan="5" valign="top">2023-01-01</th>
+      <th rowspan="5" valign="top">Alabama</th>
+      <th>Autauga</th>
+      <th>18961</th>
+      <th>230.0</th>
+    </tr>
+    <tr>
+      <th>Baldwin</th>
+      <th>67496</th>
+      <th>719.0</th>
+    </tr>
+    <tr>
+      <th>Barbour</th>
+      <th>7027</th>
+      <th>111.0</th>
+    </tr>
+    <tr>
+      <th>Bibb</th>
+      <th>7692</th>
+      <th>108.0</th>
+    </tr>
+    <tr>
+      <th>Blount</th>
+      <th>17731</th>
+      <th>260.0</th>
+    </tr>
+    <tr>
+      <th>...</th>
+      <th>...</th>
+      <th>...</th>
+      <th>...</th>
+      <th>...</th>
+    </tr>
+    <tr>
+      <th rowspan="5" valign="top">2020-12-31</th>
+      <th rowspan="5" valign="top">Wyoming</th>
+      <th>Sweetwater</th>
+      <th>2966</th>
+      <th>16.0</th>
+    </tr>
+    <tr>
+      <th>Teton</th>
+      <th>2138</th>
+      <th>4.0</th>
+    </tr>
+    <tr>
+      <th>Uinta</th>
+      <th>1558</th>
+      <th>7.0</th>
+    </tr>
+    <tr>
+      <th>Washakie</th>
+      <th>780</th>
+      <th>19.0</th>
+    </tr>
+    <tr>
+      <th>Weston</th>
+      <th>476</th>
+      <th>2.0</th>
+    </tr>
+  </tbody>
+</table>
+<p>3336255 rows × 0 columns</p>
+</div>
+</div>
+
 </div>
 
 </div>
